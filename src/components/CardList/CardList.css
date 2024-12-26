@@ -6,3 +6,31 @@
 	padding-top: 48px;
 
 }
+
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 190px;
+	height: 400px;
+	background: #FFFFFF08;
+	border-radius: 20px;
+
+
+}
+
+.plan-tittle{
+	text-align: center;
+	padding-top: 24px;
+}
+
+.plan-text {
+	text-align: center;
+}
+
+.add-plan {
+	width: 104px;
+	margin-bottom: 24px;
+	text-align: center;
+
+}
