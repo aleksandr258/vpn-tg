@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import CardList from './components/cardList/cardList';
+import CardList from './components/CardList/CardList';
 import NavBar from './components/NavBar/NavBar';
 
-const tg = window.Telegam.WebApp;
+const tg = window.Telegram.WebApp;
 
 
 function App() {
@@ -23,8 +23,7 @@ function App() {
 		<>
 		  <NavBar></NavBar>
 			<CardList></CardList>
-			<button onClick={onCLose}></button>
-
+		
 		</>
 	);
 }
