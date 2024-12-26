@@ -4,7 +4,7 @@ import TelegramBot from "node-telegram-bot-api"
 dotenv.config();
 const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, {polling: true});
-const webAppUrl = "https://www.youtube.com"
+const webAppUrl = "https://vpn-tg-xc5x.vercel.app/"
 
 
 
@@ -16,7 +16,7 @@ bot.onText(/\/start/, (msg) => {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: 'Открыть Web App', web_app: { url: "https://www.youtube.com"} },
+          { text: 'Открыть Web App', web_app: { url: "https://vpn-tg-xc5x.vercel.app/"} },
         ],
         [
           { text: 'Просто', callback_data: 'simple_button' },
