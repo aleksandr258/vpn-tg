@@ -1,5 +1,45 @@
-.nav-wrap {
+.navbar {
 	width: 100vw;
 	height: 90px;
 	background: #FFFFFF08;
+	display: flex;
+	align-items: center;
+}
+
+.navbar ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding-left: 90px;
+  margin: 0;
+  display: flex;
+  gap: 10px; /* Промежуток между элементами */
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет текста от родителя */
+  padding: 8px 16px; /* Внутренние отступы для кнопок */
+  border: none; /* Убираем границу */
+  background: none; /* Убираем фон */
+  outline: none; /* Убираем подсветку при фокусе */
+  transition: background-color 0.2s ease; /* Добавляем плавность для эффектов */
+}
+
+/* Убираем стили при наведении, фокусе и активном состоянии */
+.navbar a:focus,
+.navbar a:hover,
+.navbar a:active {
+  text-decoration: none; /* Без подчеркивания */
+  outline: none; /* Без рамки */
+  background: none; /* Без изменения фона */
+  color: inherit; /* Наследуем цвет текста */
+}
+
+/* Дополнительно: стиль при наведении, если нужен */
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Легкое затемнение */
+  border-radius: 5px; /* Скругленные углы */
 }
