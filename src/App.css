@@ -9,3 +9,9 @@
   align-items: center;
   flex-direction: column;
 }
+
+.section-tittle {
+  align-self: flex-start;
+  padding-left: 90px;
+  padding-top: 32px;
+}

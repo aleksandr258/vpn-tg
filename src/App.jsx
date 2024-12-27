@@ -42,6 +42,7 @@ function App() {
 	return (
 		<>
 		  <NavBar setActiveSection={setActiveSection}></NavBar>
+			<h2 className="section-tittle">Доступные тарифы</h2>
 			<div className="section-container">
 				{renderSection()}
 			</div>
